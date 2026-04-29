@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="ro" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>UniShare — Cursuri între studenți</title>
+  <meta name="description" content="UniShare — platformă premium unde studenții vând și cumpără cursuri între ei. Învățăm. Predăm. Câștigăm." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container nav">
+      <a class="brand" data-view="landing">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.86L18.18 22 12 18.77 5.82 22 7 14.13l-5-4.86 6.91-1.01L12 2z" stroke="currentColor" stroke-width="1.2" fill="none"/></svg>
+        <span>UniShare</span>
+      </a>
+      <nav class="menu">
+        <button class="link" data-view="catalog">Catalog</button>
+        <button class="link" data-view="seller">Autor</button>
+        <button class="link" data-view="checkout">Checkout</button>
+        <button class="link" data-view="about">Despre</button>
+        <button class="link" data-view="contact">Contact</button>
+      </nav>
+      <div class="actions">
+        <button id="themeToggle" class="iconbtn" aria-label="Comută tema">
+          <span class="sun">☀️</span><span class="moon">🌙</span>
+        </button>
+        <button class="btn ghost" data-view="auth">Autentificare</button>
+        <button class="btn" data-view="onboarding">Începe</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO / LANDING -->
+  <main class="container">
+    <section id="view-landing" class="view active">
+      <div class="hero">
+        <div class="hero-text">
+          <h1>Învățăm. Predăm. Câștigăm.</h1>
+          <p>Platformă premium unde studenții cu experiență <b>își monetizează cunoștințele</b>, iar bobocii învață mai rapid, clar și aplicat.</p>
+          <div class="cta">
+            <button class="btn xl" data-view="catalog">Vezi cursurile</button>
+            <button class="btn xl ghost" data-view="onboarding">Devino autor</button>
+          </div>
+          <div class="trust">
+            <div class="bullet">Plăți sigure</div>
+            <div class="bullet">Acces instant</div>
+            <div class="bullet">Comision corect</div>
+          </div>
+        </div>
+        <div class="hero-art">
+          <div class="glass">
+            <div class="stat">
+              <span class="kpi">1.2k+</span>
+              <span class="muted">cumpărători activi</span>
+            </div>
+            <div class="stat">
+              <span class="kpi">230+</span>
+              <span class="muted">autori verificați</span>
+            </div>
+            <div class="stat">
+              <span class="kpi">9.4/10</span>
+              <span class="muted">satisfacție cursuri</span>
+            </div>
+          </div>
+        </div>
+        <div class="bg-shapes" aria-hidden="true"></div>
+      </div>
+
+      <!-- Featured -->
+      <h2 class="section-title">Cursuri recomandate</h2>
+      <div class="grid cards-3">
+        <article class="card">
+          <div class="thumb"> 
+          <img src="images/python-logo.png" alt="Curs Introducere în Python">
+          </div>
+          <div class="card-body">
+            <h3>Introducere în Python</h3>
+            <p class="sub">de Andrei Popescu • UTM FCIM</p>
+            <div class="row">
+              <span class="price">49 MDL</span>
+              <button class="btn sm" data-view="checkout">Cumpără</button>
+            </div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="thumb">
+             <img src="images/1.png" alt="analiza matematica">
+          </div>
+          <div class="card-body">
+            <h3>Analiză matematică — esențial</h3>
+            <p class="sub">de Ioana Radu • UTM FCIM</p>
+            <div class="row">
+              <span class="price">79 MDL</span>
+              <button class="btn sm" data-view="checkout">Cumpără</button>
+            </div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="thumb">
+            <img src="images/2.png" alt="tpa">
+          </div>
+          <div class="card-body">
+            <h3>TPA — practică pentru atestare</h3>
+            <p class="sub">de Mihai P. • UTM</p>
+            <div class="row">
+              <span class="price">39 MDL</span>
+              <button class="btn sm" data-view="checkout">Cumpără</button>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- Testimonials -->
+      <h2 class="section-title">Ce spun studenții</h2>
+      <div class="grid cards-3">
+        <figure class="testi">
+          <blockquote>„Am înțeles Python în două săptămâni, cu exemple reale din laborator. Merită!”</blockquote>
+          <figcaption>
+            <div class="avatar">AP</div>
+            <div><b>Andrei P.</b><br><span class="muted">Student UTM • Info</span></div>
+          </figcaption>
+        </figure>
+        <figure class="testi">
+          <blockquote>„Cursul de analiză e concis, clar și cu probleme rezolvate. 10/10.”</blockquote>
+          <figcaption>
+            <div class="avatar">IR</div>
+            <div><b>Ioana R.</b><br><span class="muted">Studentă UTM • Mate</span></div>
+          </figcaption>
+        </figure>
+        <figure class="testi">
+          <blockquote>„Am vândut 37 de accesări în prima lună. Interfața de autor este super.”</blockquote>
+          <figcaption>
+            <div class="avatar">MP</div>
+            <div><b>Mihai P.</b><br><span class="muted">Autor • TPA</span></div>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- CATALOG -->
+    <section id="view-catalog" class="view">
+      <h2 class="section-title">Catalog cursuri</h2>
+      <div class="filters">
+        <input class="input" id="q" placeholder="Caută: Python, Analiză, TPA..." />
+        <select class="input" id="cat">
+          <option value="">Toate categoriile</option>
+          <option>PC</option>
+          <option>AM</option>
+          <option>ALGA</option>
+          <option>TPA</option>
+          <option>ICPP</option>
+        </select>
+        <select class="input" id="sort">
+          <option value="pop">Populare</option>
+          <option value="new">Noi</option>
+          <option value="cheap">Preț crescător</option>
+        </select>
+      </div>
+      <div id="catalogGrid" class="grid cards-3">
+  <article class="card">
+    <div class="thumb">
+      <img src="images/python-logo.png" alt="Curs Introducere în Python">
+    </div>
+    <div class="card-body">
+      <h3>Introducere în Python</h3>
+      <p class="sub">de Andrei Popescu • UTM FCIM</p>
+      <div class="row">
+        <span class="price">49 MDL</span>
+        <button class="btn sm" data-view="checkout">Cumpără</button>
+      </div>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="thumb">
+      <img src="images/1.png" alt="Analiză matematică — esențial">
+    </div>
+    <div class="card-body">
+      <h3>Analiză matematică — esențial</h3>
+      <p class="sub">de Ioana Radu • UTM FCIM</p>
+      <div class="row">
+        <span class="price">79 MDL</span>
+        <button class="btn sm" data-view="checkout">Cumpără</button>
+      </div>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="thumb">
+      <img src="images/2.png" alt="TPA — practică pentru atestare">
+    </div>
+    <div class="card-body">
+      <h3>TPA — practică pentru atestare</h3>
+      <p class="sub">de Mihai P. • UTM</p>
+      <div class="row">
+        <span class="price">39 MDL</span>
+        <button class="btn sm" data-view="checkout">Cumpără</button>
+      </div>
+    </div>
+  </article>
+</div>
+    </section>
+
+    <!-- AUTH -->
+    <section id="view-auth" class="view auth">
+      <div class="auth-card">
+        <div class="tabs">
+          <button class="tab active" data-auth="login">Autentificare</button>
+          <button class="tab" data-auth="signup">Înregistrare</button>
+        </div>
+        <form class="form" id="loginForm">
+          <label>Email</label>
+          <input class="input" type="email" placeholder="nume.prenume@iis.utm.md" required />
+          <label>Parolă</label>
+          <input class="input" type="password" placeholder="••••••••" required />
+          <button class="btn w">Intră în cont</button>
+        </form>
+        <form class="form hidden" id="signupForm">
+          <label>Email</label>
+          <input class="input" type="email" placeholder="nume.prenume@iis.utm.md" required />
+          <label>Parolă</label>
+          <input class="input" type="password" placeholder="minim 8 caractere" required />
+          <button class="btn w" data-view="onboarding">Creează cont</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- ONBOARDING -->
+    <section id="view-onboarding" class="view">
+      <h2 class="section-title">Alege tipul contului</h2>
+      <div class="grid cards-2">
+        <article class="card p">
+          <h3>Cumpărător (Student)</h3>
+          <p class="muted">Cumpără cursuri, urmărește progresul, lasă review-uri.</p>
+          <button class="btn" data-view="catalog">Continuă ca student</button>
+        </article>
+        <article class="card p">
+          <h3>Vânzător (Autor)</h3>
+          <p class="muted">Creează cursuri, setează prețuri, încasezi după vânzare.</p>
+          <label class="lbl">Nume public</label>
+          <input class="input" placeholder="Ex: Veniamin Guidea" />
+          <label class="lbl">Cont payout (Paypal / credit-card)</label>
+          <input class="input" placeholder="exemple@gmail.com / 4772-4214-...." />
+          <button class="btn" data-view="seller">Continuă ca autor</button>
+        </article>
+      </div>
+    </section>
+
+    <!-- SELLER DASHBOARD -->
+    <section id="view-seller" class="view">
+      <h2 class="section-title">Panou Autor</h2>
+      <div class="grid cards-2">
+        <article class="card p">
+          <h3>Creează un curs nou</h3>
+          <p class="muted">Adaugă titlu, curriculum, preț și trimite spre moderare.</p>
+          <button class="btn">Creează curs</button>
+        </article>
+        <article class="card p">
+          <h3>Venituri și statistici</h3>
+          <p class="muted">Total vânzări: <b class="ok">1.250 MDL</b></p>
+          <p class="muted">Cursuri publicate: 9</p>
+          <button class="btn ghost">Vezi detalii</button>
+        </article>
+      </div>
+    </section>
+
+    <!-- CHECKOUT -->
+    <section id="view-checkout" class="view">
+      <h2 class="section-title">Checkout</h2>
+      <div class="grid cards-2">
+        <article class="card p"><h3>Introducere în Python</h3>
+          <div class="row">
+            <div class="thumb sm">
+              
+            <img src="images/python-logo.png" alt="python">
+            </div>
+            <div>
+              
+              <p class="muted small">Autor: Andrei Popescu • UTM FCIM</p>
+            </div>
+          </div>
+          <div class="sep"></div>
+          <div class="row small"><span class="muted">Preț</span><b>100 MDL</b></div>
+          <div class="row small"><span class="muted">Comision platformă (10%)</span><b>10 MDL</b></div>
+          <div class="row small"><span class="muted">Taxe procesator (3% + 1)</span><b>4 MDL</b></div>
+          <div class="sep"></div>
+          <div class="row"><span class="muted">Total de plată</span><b>100 MDL</b></div>
+          <button class="btn w">Plătește acum</button>
+          <p class="muted small">După plată primești acces instant la curs. Autorul va primi ~ 86 MDL.</p>
+        </article>
+        <article class="card p">
+          <label class="lbl">Nume pe card</label>
+          <input class="input" placeholder="Veniamin Guidea" />
+          <div class="grid two gap">
+            <div><label class="lbl">Număr card</label><input class="input" placeholder="4242 4242 4242 4242" /></div>
+            <div><label class="lbl">Expirare</label><input class="input" placeholder="MM/YY" /></div>
+          </div>
+          <div class="grid two gap">
+            <div><label class="lbl">CVC</label><input class="input" placeholder="123" /></div>
+            <div><label class="lbl">Cupon (opțional)</label><input class="input" placeholder="BOBOCI10" /></div>
+          </div>
+          <div class="row right"><button class="btn ghost" data-view="catalog">Înapoi</button><button class="btn">Finalizează</button></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="view-about" class="view">
+      <h2 class="section-title">Despre UniShare</h2>
+      <div class="about">
+        <p><b>UniShare</b> este o platformă creată de studenți pentru studenți. Autori verificați își pot publica cursurile, iar cumpărătorii primesc acces instant și suport.</p>
+        <ul>
+          <li>Moderare conținut înainte de publicare</li>
+          <li>Rating & review-uri reale</li>
+          <li>Comision transparent la fiecare tranzacție</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="view-contact" class="view">
+      <h2 class="section-title">Contact</h2>
+      <form class="form max400">
+        <label>Nume</label>
+        <input class="input" placeholder="Numele tău" />
+        <label>Email</label>
+        <input class="input" type="email" placeholder="you@example.com" />
+        <label>Mesaj</label>
+        <textarea class="input" rows="5" placeholder="Scrie-ne mesajul tău..."></textarea>
+        <button class="btn w">Trimite</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container foot">
+      <div class="fbrand">
+        <div class="logo"><img src="images/logo.png" alt="Logo UniShare" class="footer-logo"></div>
+        <div>
+          <b>UniShare</b><br/>
+          <span class="muted">Cursuri între studenți</span>
+        </div>
+      </div>
+      <nav class="fmenu">
+        <button data-view="about">Despre</button>
+        <button data-view="contact">Contact</button>
+        <button data-view="catalog">Catalog</button>
+      </nav>
+      <div class="socials">
+        <a aria-label="Instagram" href="https://www.instagram.com/veniic_/" target="_blank"><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5zm0 2a3 3 0 00-3 3v10a3 3 0 003 3h10a3 3 0 003-3V7a3 3 0 00-3-3H7zm5 3a6 6 0 110 12 6 6 0 010-12zm0 2.2a3.8 3.8 0 100 7.6 3.8 3.8 0 000-7.6zM18 6.5a1 1 0 110 2 1 1 0 010-2z"/></svg></a>
+        <a aria-label="Twitter" href="https://www.youtube.com/watch?v=xvFZjo5PgG0&list=RDxvFZjo5PgG0&start_radio=1" target="_blank"><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M8 19c7.5 0 11.6-6.1 11.6-11.4v-.5A8.3 8.3 0 0022 4.6a8.2 8.2 0 01-2.4.6 4.1 4.1 0 001.8-2.2 8.2 8.2 0 01-2.6 1 4.1 4.1 0 00-7 3.7 11.6 11.6 0 01-8.4-4.2 4 4 0 001.3 5.5 4.2 4.2 0 01-1.8-.5v.1a4.1 4.1 0 003.3 4 3.9 3.9 0 01-1.8.1 4.1 4.1 0 003.8 2.8A8.3 8.3 0 012 17.6a11.7 11.7 0 006.3 1.8"/></svg></a>
+        <a aria-label="Email" href="https://mail.google.com/mail/u/0/#sent?compose=SxfkdnRKlLsgNrRRCVZWkvXvdthvPMvVkTpkpXtzWkZfnLprvtvwvBwQnqDHhDttSMfDlSBCbqvBKBTnsTpdZdMgJWSpgzsDtSFHRdrbKdltJZtQtDB" target="_blank"><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M2 6a2 2 0 012-2h16a2 2 0 012 2l-10 7L2 6zm0 2.2l9.5 6.6a1 1 0 001 0L22 8.2V18a2 2 0 01-2 2H4a2 2 0 01-2-2V8.2z"/></svg></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
